@@ -17,10 +17,9 @@
 
                     {% if post.image %}
                     <div class="col-md-4">
-                        <img src="{{post.image.url}}"
+                        <img src="{{ post.image.url }}"
                              class="img-fluid rounded-start h-100 object-fit-cover"
-                             alt="{{post.title}}"
-                             >
+                             alt="{{ post.title }}">
                     </div>
                     {% endif %}
 
@@ -50,6 +49,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </article>
         </div>
@@ -62,18 +62,21 @@
 </div>
 
 <style>
-    .hover-shadow {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .hover-shadow:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
-    }
-    .object-fit-cover {
-        object-fit: cover;
-    }
-    .transition-all {
-        transition: all 0.3s ease-in-out;
-    }
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
 </style>
 {% endblock %}
